@@ -50,7 +50,7 @@ export class HTMLGalaxyCursorElement extends HTMLCanvasElement {
 
   constructor() {
     super();
-    const worker = new Worker('./galaxy-cursor.worker.js', {
+    const worker = new Worker('galaxy-cursor/galaxy-cursor.worker.js', {
       type: 'module'
     });
 

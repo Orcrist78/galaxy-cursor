@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<!--    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">-->
+    <title>GALAXY CURSOR!!</title>
+    <link rel="modulepreload" href="script/galaxy-cursor/galaxy-cursor.js">
+    <link rel="modulepreload" href="script/galaxy-cursor/galaxy-cursor.worker.js">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'">
+    <link rel="manifest" href="manifest.webmanifest">
+  </head>
+  <body>
+<!--    <canvas-->
+<!--      is="galaxy-cursor"-->
+<!--      accuracy="100"-->
+<!--      density="20"-->
+<!--      distance="50"-->
+<!--      radius="150"-->
+<!--      links="5"-->
+<!--    ></canvas>-->
+    <canvas
+      is="galaxy-cursor"
+      accuracy="100"
+      radius="150"
+      links="7"
+    ></canvas>
+    <canvas
+      is="galaxy-cursor"
+      distance="80"
+      speed="500"
+      density="65"
+      accuracy="5"
+      radius="100"
+      links="3"
+    ></canvas>
+    <canvas is="galaxy-cursor" radius="90" density="50"></canvas>
+    <canvas is="galaxy-cursor" radius="80" density="60"></canvas>
+    <canvas is="galaxy-cursor" radius="70" density="70"></canvas>
+    <canvas is="galaxy-cursor" radius="60" density="80"></canvas>
+
+    <script src="script/galaxy-cursor/galaxy-cursor.js" type="module"></script>
+    <script type="module">
+      'serviceWorker' in navigator && await navigator.serviceWorker.register('sw.js');
+    </script>
+  </body>
+</html>

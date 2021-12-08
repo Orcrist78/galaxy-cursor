@@ -20,7 +20,7 @@ body {
   background-color: black;
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
-  background-image: url('/img/bg.jpeg');
+  background-image: url('img/bg.jpeg');
 }
 
 body::-webkit-scrollbar {

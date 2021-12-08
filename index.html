@@ -4,8 +4,8 @@
     <meta charset="utf-8">
 <!--    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">-->
     <title>GALAXY CURSOR!!</title>
-    <link rel="modulepreload" href="script/galaxy-cursor/galaxy-cursor.js">
-    <link rel="modulepreload" href="script/galaxy-cursor/galaxy-cursor.worker.js">
+    <link rel="modulepreload" href="galaxy-cursor/galaxy-cursor.js">
+    <link rel="modulepreload" href="galaxy-cursor/galaxy-cursor.worker.js">
     <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'">
     <link rel="manifest" href="manifest.webmanifest">
@@ -39,7 +39,7 @@
     <canvas is="galaxy-cursor" radius="70" density="70"></canvas>
     <canvas is="galaxy-cursor" radius="60" density="80"></canvas>
 
-    <script src="script/galaxy-cursor/galaxy-cursor.js" type="module"></script>
+    <script src="galaxy-cursor/galaxy-cursor.js" type="module"></script>
     <script type="module">
       'serviceWorker' in navigator && await navigator.serviceWorker.register('sw.js');
     </script>
